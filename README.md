@@ -24,8 +24,8 @@ A powerful local AI coding assistant powered by Phi-4 model, built with FastAPI 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/luna-ai.git
-cd luna-ai
+git clone https://github.com/RonJo07/Luna-AI-Smart-Coding-Assistant.git
+
 ```
 
 2. Create and activate a virtual environment:
