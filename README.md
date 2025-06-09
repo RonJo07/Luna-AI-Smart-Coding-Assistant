@@ -47,6 +47,7 @@ pip install -r requirements.txt
 4. Download the model:
    - Create a `backend/model` directory
    - Download the Phi-4 model (Q3_K_S quantized version) and place it in the `backend/model` directory
+      https://huggingface.co/microsoft/phi-4-gguf/resolve/main/phi-4-Q3_K_S.gguf
    - Rename it to `phi-4-Q3_K_S.gguf`
 
 ## Running the Application
