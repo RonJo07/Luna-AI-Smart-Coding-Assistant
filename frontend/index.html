@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna AI - Your Smart Coding Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1><i class="fas fa-robot"></i> Luna AI</h1>
+                <p class="subtitle">Your Smart Coding Assistant</p>
+            </div>
+            <div class="header-right">
+                <button id="modelConfigButton" class="config-button">
+                    <i class="fas fa-cog"></i> Model Settings
+                </button>
+                <a href="https://techwithron.co.in/" target="_blank" class="portfolio-link">
+                    <i class="fas fa-code"></i> techwithron.co.in
+                </a>
+                <button id="themeToggle" class="theme-toggle">🌙</button>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chatMessages" class="chat-messages"></div>
+            
+            <div class="input-container">
+                <div class="prompt-templates">
+                    <button class="template-btn" data-template="explain">
+                        <i class="fas fa-book"></i> Explain Code
+                    </button>
+                    <button class="template-btn" data-template="summarize">
+                        <i class="fas fa-file-alt"></i> Summarize
+                    </button>
+                    <button class="template-btn" data-template="debug">
+                        <i class="fas fa-bug"></i> Debug
+                    </button>
+                </div>
+                
+                <div class="message-input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask Luna anything..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendButton" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Developed with <i class="fas fa-heart"></i> by <a href="https://techwithron.co.in/" target="_blank">techwithron</a></p>
+        </footer>
+    </div>
+
+    <!-- Model Configuration Modal -->
+    <div id="modelConfigModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-cog"></i> Model Configuration</h2>
+                <button id="closeModalButton" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="modelPathInput">Model Path:</label>
+                    <input type="text" id="modelPathInput" placeholder="Enter the path to your model file">
+                    <p class="help-text">Enter the full path to your GGUF model file (e.g., C:\Models\phi-4-Q3_K_S.gguf)</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="saveConfigButton" class="save-button">Save Configuration</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html> 

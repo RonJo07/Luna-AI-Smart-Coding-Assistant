@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+.Python
+env/
+venv/
+*/bin/
+*/include/
+*/lib/
+*/lib64/
+*.egg-info/
+.installed.cfg
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Application specific
+.luna-ai/
+*.log
+*.gguf
+!backend/model/phi-4-Q3_K_S.gguf
+
+# Code folder (exclude as requested)
+code/ 
