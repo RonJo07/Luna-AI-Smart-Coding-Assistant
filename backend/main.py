@@ -18,7 +18,7 @@ from datetime import datetime
 
 # Set up logging
 LOG_DIR = Path.home() / ".luna-ai" / "logs"
-LOG_DIR.mkdir(exist_ok=True)
+LOG_DIR.mkdir(parents=True,exist_ok=True)
 LOG_FILE = LOG_DIR / f"luna_ai_{datetime.now().strftime('%Y%m%d')}.log"
 
 # Configure logging
