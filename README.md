@@ -19,6 +19,9 @@ A powerful local AI coding assistant powered by Phi-4 model, built with FastAPI 
 - Python 3.8 or higher
 - 8GB RAM minimum (16GB recommended)
 - Windows 10/11 or Linux
+- C++ Build Tools (Windows only): [MS Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+- CMake (https://cmake.org/) – required for building llama-cpp-python
+- (Optional) Ninja or Meson – alternative build systems
 
 ## Installation
 
