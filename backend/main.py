@@ -55,12 +55,12 @@ class ModelConfig(BaseModel):
 
 class ConfigRequest(BaseModel):
     model_path: str
-    model_config: Optional[dict] = None
+    config_data: Optional[dict] = None  # Renamed from model_config
 
 class ConfigResponse(BaseModel):
-    model_path: str
-    model_config: dict
     status: str
+    config_data: dict  # Renamed from model_config
+
 
 # Initialize FastAPI app
 app = FastAPI(title="Luna AI")
