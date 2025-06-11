@@ -22,6 +22,9 @@ A powerful local AI coding assistant powered by Phi-4 model, built with FastAPI 
 - C++ Build Tools (Windows only): [MS Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 - CMake (https://cmake.org/) – required for building llama-cpp-python
 - (Optional) Ninja or Meson – alternative build systems
+- Git: https://git-scm.com/download/win
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- llama-cpp-python: https://pypi.org/project/llama-cpp-python/
 
 ## Installation
 
